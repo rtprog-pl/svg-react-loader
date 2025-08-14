@@ -3,7 +3,7 @@ SVG to React Loader
 
 > A Webpack Loader to turn SVGs into React Components
 
-This is a for of [svg-react-loader](https://github.com/jhamlet/svg-react-loader)
+This is a fork of [svg-react-loader](https://github.com/jhamlet/svg-react-loader)
 that:
 - has newer version of `xml2js` dependency that has no vulnerabilities,
 - uses JavaScript default parameters instead of `defaultProps` that will be removed in future React versions.
