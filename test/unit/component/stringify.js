@@ -39,7 +39,7 @@ describe('svg-react-loader/lib/component/stringify', () => {
                         should.
                         equal(
                             'var React = require(\'react\');\n\n' +
-                            'function SvgReactComponent ({"version":"1.1","x":"0px","y":"0px","viewBox":"0 0 16 16","enableBackground":"new 0 0 16 16","xmlSpace":"preserve","className":"simple", ...rest }) {\n' +
+                            'function SvgReactComponent ({version="1.1", x="0px", y="0px", viewBox="0 0 16 16", enableBackground="new 0 0 16 16", xmlSpace="preserve", className="simple", ...rest }) {\n' +
                             '    return React.createElement("svg", {version, x, y, viewBox, enableBackground, xmlSpace, className, ...rest },' +
                             '[React.createElement("rect",{"x":"0","y":"0",' +
                             '"width":"16","height":"16","fill":"#fff","key":0}),' +
