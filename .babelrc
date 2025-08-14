@@ -1,15 +1,14 @@
   {
     "presets": [
-      "modern-browsers",
-      "react"
+      "@babel/preset-env",
+      "@babel/preset-react"
     ],
     "plugins": [
-      "transform-runtime",
-      "transform-object-rest-spread"
     ],
     "only": [
       "src",
-      "test"
+      "test",
+      "lib"
     ],
     "ignore": [
       "node_modules"

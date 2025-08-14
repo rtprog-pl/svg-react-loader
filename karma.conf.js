@@ -16,6 +16,18 @@ module.exports = function (config) {
             module: {
                 loaders: [
                     {
+                        test: /\.svg$/,
+                        use: [
+                            {
+                                loader: 'babel-loader'
+                            },
+                            {
+                                loader: require.resolve('./lib/loader.js'), // adjust path if needed
+                                options: { /* your options */ }
+                            }
+                        ]
+                    },
+                    {
                         test: /\.js$/,
                         exclude: /node_modules/,
                         loader: 'babel-loader'

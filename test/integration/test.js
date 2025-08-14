@@ -3,10 +3,10 @@ import R from 'ramda';
 import React, { Component } from 'react';
 import { mount } from 'enzyme';
 
-import SimpleSvg from '../../lib/loader.js?name=SimpleSvg!../samples/simple.svg';
-import StylesSvg from '../../lib/loader.js?classIdPrefix!../samples/styles.svg';
-import TextSvg from '../../lib/loader.js!../samples/text.svg';
-import ObjectSvg from '../../lib/loader.js!../samples/object.json';
+import SimpleSvg from '../samples/simple.svg?name=SimpleSvg';
+import StylesSvg from '../samples/styles.svg?classIdPrefix';
+import TextSvg from '../samples/text.svg';
+import ObjectSvg from 'babel-loader!../../lib/loader.js!../samples/object.json';
 
 require('should');
 
